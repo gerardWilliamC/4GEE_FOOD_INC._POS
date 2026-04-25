@@ -8,7 +8,14 @@ Since this project was developed in a cross-platform environment (macOS VM), Win
 
 Before extracting: Right-click the .zip file -> Properties -> Check Unblock -> Apply.
 
-If already extracted: Right-click the MainForm.resx file inside the project folder -> Properties -> Check Unblock.
+If already extracted: Right-click the Example2.resx file inside the project folder -> Properties -> Check Unblock.
+                      Right-click the Example3.resx file inside the project folder -> Properties -> Check Unblock.
+                      Right-click the Example3_PrintReceipt.resx file inside the project folder -> Properties -> Check Unblock.
+                      Right-click the Example4.resx file inside the project folder -> Properties -> Check Unblock.
+                      Right-click the MainForm.resx file inside the project folder -> Properties -> Check Unblock.
+                      Right-click the OrderingPOS_Admin.resx file inside the project folder -> Properties -> Check Unblock.
+                      Right-click the POS_Admin.resx file inside the project folder -> Properties -> Check Unblock.
+                      Right-click the User_AccountFrm.resx file inside the project folder -> Properties -> Check Unblock.
 
     Shorten the File Path (Fixes "OS Max Path Limit" Error)
 

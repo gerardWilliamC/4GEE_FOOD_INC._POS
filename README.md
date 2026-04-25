@@ -4,7 +4,7 @@ If the project fails to build or shows "Missing Debug Target" errors, please app
 
     Unblock the Project (Fixes "Mark of the Web" Error)
 
-Since this project was developed in a macOS environment, Windows may automatically block resource files (.resx) for security reasons. To ensure the project builds correctly, please follow these steps:
+Since this project was developed in a macOS environment (via VM), Windows may automatically block resource files (.resx) for security reasons. To ensure the project builds correctly, please follow these steps:
 Option 1: Before Extracting (Recommended)
 
     Right-click the downloaded .zip file.
@@ -31,7 +31,8 @@ If you have already extracted the files, you must manually unblock the .resx fil
 
     Get-ChildItem -Recurse | Unblock-File
 
-    
+:
+
     Shorten the File Path (Fixes "OS Max Path Limit" Error)
 
 This project uses descriptive naming conventions which may exceed the Windows 260-character path limit if placed deep within subfolders (e.g., Downloads or Desktop).

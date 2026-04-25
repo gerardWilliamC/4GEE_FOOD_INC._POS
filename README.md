@@ -30,6 +30,7 @@ If you have already extracted the files, you must manually unblock the .resx fil
     Tip: You can also unblock all files at once by opening PowerShell in the project folder and running:
 
     Get-ChildItem -Recurse | Unblock-File
+    
 
     Shorten the File Path (Fixes "OS Max Path Limit" Error)
 

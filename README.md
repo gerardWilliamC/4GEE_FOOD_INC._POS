@@ -4,26 +4,32 @@ If the project fails to build or shows "Missing Debug Target" errors, please app
 
     Unblock the Project (Fixes "Mark of the Web" Error)
 
-Since this project was developed in a cross-platform environment (macOS VM), Windows may block the resource files (.resx).
+Since this project was developed in a macOS environment, Windows may automatically block resource files (.resx) for security reasons. To ensure the project builds correctly, please follow these steps:
+Option 1: Before Extracting (Recommended)
 
-Before extracting: Right-click the .zip file -> Properties -> Check Unblock -> Apply.
+    Right-click the downloaded .zip file.
 
-If already extracted: 
-Right-click the Example2.resx file inside the project folder -> Properties -> Check Unblock.
+    Select Properties.
 
-Right-click the Example3.resx file inside the project folder -> Properties -> Check Unblock.
+    Check the Unblock checkbox at the bottom and click Apply.
 
-Right-click the Example3_PrintReceipt.resx file inside the project folder -> Properties -> Check Unblock.
+Option 2: If Already Extracted
 
-Right-click the Example4.resx file inside the project folder -> Properties -> Check Unblock.
+If you have already extracted the files, you must manually unblock the .resx files within the project folder. Right-click → Properties → Unblock for the following:
 
-Right-click the MainForm.resx file inside the project folder -> Properties -> Check Unblock.
+    Example2.resx / Example3.resx / Example4.resx
 
-Right-click the OrderingPOS_Admin.resx file inside the project folder -> Properties -> Check Unblock.
+    Example3_PrintReceipt.resx
 
-Right-click the POS_Admin.resx file inside the project folder -> Properties -> Check Unblock.
+    MainForm.resx
 
-Right-click the User_AccountFrm.resx file inside the project folder -> Properties -> Check Unblock.
+    OrderingPOS_Admin.resx / POS_Admin.resx
+
+    User_AccountFrm.resx
+
+    Tip: You can also unblock all files at once by opening PowerShell in the project folder and running:
+
+    Get-ChildItem -Recurse | Unblock-File
 
     Shorten the File Path (Fixes "OS Max Path Limit" Error)
 

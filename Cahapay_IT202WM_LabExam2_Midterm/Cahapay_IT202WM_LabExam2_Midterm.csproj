@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{588BD964-5F6D-4C2C-AE1F-DE44E1C3F9F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cahapay_IT202WM_LabExam2_Midterm</RootNamespace>
+    <AssemblyName>Cahapay_IT202WM_LabExam2_Midterm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Example3_PrintReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example3_PrintReceipt.Designer.cs">
+      <DependentUpon>Example3_PrintReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example3.Designer.cs">
+      <DependentUpon>Example3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example2.Designer.cs">
+      <DependentUpon>Example2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example4.Designer.cs">
+      <DependentUpon>Example4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderingPOS_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderingPOS_Admin.Designer.cs">
+      <DependentUpon>OrderingPOS_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS_Admin.Designer.cs">
+      <DependentUpon>POS_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Price_Item_Value.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="User_AccountFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_AccountFrm.Designer.cs">
+      <DependentUpon>User_AccountFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Variables1.cs" />
+    <EmbeddedResource Include="Example3_PrintReceipt.resx">
+      <DependentUpon>Example3_PrintReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example3.resx">
+      <DependentUpon>Example3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example2.resx">
+      <DependentUpon>Example2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example4.resx">
+      <DependentUpon>Example4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderingPOS_Admin.resx">
+      <DependentUpon>OrderingPOS_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS_Admin.resx">
+      <DependentUpon>POS_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_AccountFrm.resx">
+      <DependentUpon>User_AccountFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jollibee-Super-Meal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jollibee-chickenjoymeal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-pc.-Chickenjoy-Regular-Fries-Half-Jolly-Spaghetti-Super-Meal-W-Drink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meal A Jollibee chickenjoy and spaghetti shanghai %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8ea1aaa96ac0cd5859344218c1b22668.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-_2_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i-l-u-v-e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-_3_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supreme-Pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sausage-and-kale-pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quattro-Formaggio-Four-Cheese-Pizza_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prawn-Pizza_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proscuitto-Rocket-Pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Potato-Rosemary-Pizza_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pepperoni-Pizza_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meatlovers-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Margherita-pizza-overhead.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ham-and-Pineapple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Garlic-cheese-pizza_9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capricciosa-Ham-Artichoke-Mushrooms-Olives_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdn.okya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\df.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2pc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cbur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cspg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fm2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cgm.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
